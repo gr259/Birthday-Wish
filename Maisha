@@ -1,0 +1,23 @@
+.coil {
+
+width: 8em;
+
+height: 8em;
+
+animation: jolt 3s linear infinite;
+
+}
+
+.coil-track {
+
+fill: none;
+
+stroke: hsla(250, 15%, 12%, 0.08);
+
+stroke-width: 16;
+
+stroke-linecap: round;
+
+transition: stroke 0.3s;
+
+}
