@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#100713">
-  <title>A Heart for Maisha 💗</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>💗 I Coded This Heartbeat For You</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="app">
-    <header class="topbar">
-      <span class="brand">♥ A LITTLE UNIVERSE</span>
-      <button id="editBtn" class="outline-btn">✎ Edit Letter</button>
-    </header>
-
-    <section class="scene">
-      <canvas id="heartCanvas" aria-label="Interactive animated heart"></canvas>
-      <div class="hint">Touch and drag the heart to rotate ✨</div>
-    </section>
-
-    <section class="letter-card">
-      <div class="eyebrow">A LETTER FROM THE HEART</div>
-      <h1>For <span id="toName">Maisha</span> <span class="pink">♥</span></h1>
-      <div class="small-divider">✦ ─── ♥ ─── ✦</div>
-      <p id="letterText">You make ordinary moments feel special. May your days be filled with beautiful memories, little joys, and endless reasons to smile. Always keep shining. 💗</p>
-      <p class="signature">With love, <span id="fromName">Someone Special</span></p>
-      <button id="shareBtn" class="primary-btn">Copy My Letter Link ↗</button>
-      <p id="status" class="status" role="status"></p>
-    </section>
-
-    <footer>Made with ♥, just for you</footer>
-  </main>
-
-  <dialog id="editor">
-    <form id="letterForm">
-      <div class="editor-heading">
-        <div>
-          <div class="eyebrow">MAKE IT YOURS</div>
-          <h2>Your Letter 💌</h2>
+    <div class="start-overlay" id="startOverlay">
+        <div class="glass-card">
+            <div class="card-glow"></div>
+            <div class="card-icon">💓</div>
+            <h2 class="card-title">From love</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <p class="status-text" id="statusText">Ready to compile...</p>
+            <button class="start-btn" id="startBtn" disabled>
+                <span class="btn-text">Donot Click 🚨 (Self-Destruct)</span>
+                <span class="btn-shine"></span>
+            </button>
         </div>
-        <button type="button" id="closeBtn" class="close-btn" aria-label="Close">×</button>
-      </div>
+    </div>
 
-      <label for="recipient">Recipient's name</label>
-      <input id="recipient" maxlength="60" value="Maisha" required>
+    <canvas id="c"></canvas>
 
-      <label for="sender">Your name</label>
-      <input id="sender" maxlength="60" value="Someone Special" required>
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="letter-card" id="letterCard">
+            <button class="letter-close" id="letterClose">&times;</button>
+            <div class="letter-header">
+                <span id="letterHeaderTitle">for you</span>
+                <button class="letter-edit-btn" id="letterEditBtn" title="Edit Letter">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="letter-view-container" id="letterViewContainer">
+                <div class="letter-body" id="letterBody"></div>
+                <div class="letter-sign" id="letterSign">— coded with love by Hassan</div>
+            </div>
 
-      <label for="message">Your personal letter</label>
-      <textarea id="message" rows="6" maxlength="1500" required>You make ordinary moments feel special. May your days be filled with beautiful memories, little joys, and endless reasons to smile. Always keep shining. 💗</textarea>
+            <div class="letter-edit-container" id="letterEditContainer">
+                <div class="form-group">
+                    <label for="recipientInput">To</label>
+                    <input type="text" id="recipientInput" maxlength="30" placeholder="Recipient Name">
+                </div>
+                <div class="form-group">
+                    <label for="senderInput">From</label>
+                    <input type="text" id="senderInput" maxlength="30" placeholder="Sender Name">
+                </div>
+                <div class="form-group">
+                    <label for="messageInput">Letter</label>
+                    <textarea id="messageInput" rows="5" maxlength="500" placeholder="Your love letter..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="form-btn save-btn" id="saveLetterBtn">Save & Close</button>
+                    <button class="form-btn share-btn" id="shareLetterBtn">Copy Link</button>
+                </div>
+                <div class="share-toast" id="shareToast">Link copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
 
-      <button type="submit" class="primary-btn">Save My Letter ♥</button>
-      <p class="privacy-note">Your edits are saved in this browser. Copy a link to share your letter with someone else.</p>
-    </form>
-  </dialog>
 
-  <script src="script.js"></script>
+
+    <div class="msg" id="msg">
+        <p class="m1">This is my love</p>
+        <p class="m2">for <span>you</span> 💗</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
