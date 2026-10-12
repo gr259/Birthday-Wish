@@ -106,9 +106,11 @@
     let isLetterOpen = false;
     let isLetterTyping = false;
     
-    let recipient = 'Lishu';
-    let sender = 'Hassan';
-    let message = "Dear Lishu,\n\nThis is my love for you... 🌹\n\nEvery line of code, every pixel, and every beat of this heart is a reminder of how incredibly special you are to me. You make my world so much brighter, and my life complete. ✨\n\nNo matter where life takes us, my heart will always run in an infinite loop for you, beating forever and always. You are my today and all of my tomorrows. 💗💍";
+    let recipient = 'Maisha';
+    let sender = 'Mohibul';
+    let message = "FOR MY BEST FRIEND\n\Dear Maisha,\n\This is a little message to remind you how special you are to me.... 🌹\n\Every line of code, every pixel, and every beat of this heart represents our beautiful friendship. You make my world brighter with your presence, and I’m truly grateful to have a best friend like you in my life. ✨ \n\
+No matter where life takes us, I hope our friendship will always stay strong. Even if life gets busy and we go different ways, you’ll always have a special place in my heart as my best friend.\n\You are a wonderful part of my today, and I hope our friendship continues to be a beautiful part of all our tomorrows.💖🫂\n\
+Forever grateful to have you as my best friend, Maisha. ♾️";
 
     function initLoveData() {
         const params = new URLSearchParams(window.location.search);
