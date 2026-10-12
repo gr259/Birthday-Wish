@@ -106,9 +106,9 @@
     let isLetterOpen = false;
     let isLetterTyping = false;
     
-    let recipient = 'Maisha';
-    let sender = 'Mohibul';
-    let message = "FOR MY BEST FRIEND 💗\n\nDear Maisha,\n\nThis little message is to remind you how special you are to me. 🌹\n\nEvery pixel and every heartbeat in this creation represents our beautiful friendship. You make my world brighter, and I’m truly grateful to have you as my best friend. ✨.\n\nNo matter where life takes us, I hope our friendship stays strong forever. You’ll always have a special place in my heart..\n\nForever grateful to have you in my life, Maisha. 💖🫂♾️,";
+    let recipient ="Maisha";
+    let sender = "Mohibul";
+    let message = "FOR MY BEST FRIEND 💗\n\nDear Maisha,\n\nThis little message is to remind you how special you are to me. 🌹\n\nEvery pixel and every heartbeat in this creation represents our beautiful friendship. You make my world brighter,and I’m truly grateful to have you as my best friend. ✨.No matter where life takes us, I hope our friendship stays strong forever. You’ll always have a special place in my heart..\n\nForever grateful to have you in my life, Maisha. 💖🫂♾️,";
 
     function initLoveData() {
         const params = new URLSearchParams(window.location.search);
