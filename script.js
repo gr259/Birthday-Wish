@@ -108,9 +108,7 @@
     
     let recipient = 'Maisha';
     let sender = 'Mohibul';
-    let message = "FOR MY BEST FRIEND\n\Dear Maisha,\n\This is a little message to remind you how special you are to me.... 🌹\n\Every line of code, every pixel, and every beat of this heart represents our beautiful friendship. You make my world brighter with your presence, and I’m truly grateful to have a best friend like you in my life. ✨ \n\
-No matter where life takes us, I hope our friendship will always stay strong. Even if life gets busy and we go different ways, you’ll always have a special place in my heart as my best friend.\n\You are a wonderful part of my today, and I hope our friendship continues to be a beautiful part of all our tomorrows.💖🫂\n\
-Forever grateful to have you as my best friend, Maisha. ♾️";
+    let message = "FOR MY BEST FRIEND 💗\n\nDear Maisha,\n\nThis little message is to remind you how special you are to me. 🌹\n\nEvery pixel and every heartbeat in this creation represents our beautiful friendship. You make my world brighter, and I’m truly grateful to have you as my best friend. ✨.\n\nNo matter where life takes us, I hope our friendship stays strong forever. You’ll always have a special place in my heart..\n\nForever grateful to have you in my life, Maisha. 💖🫂♾️,";
 
     function initLoveData() {
         const params = new URLSearchParams(window.location.search);
