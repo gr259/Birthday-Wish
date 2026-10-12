@@ -92,7 +92,7 @@
         requestAnimationFrame(animateLoader);
     }
 
-    setTimeout(startCardLoader, 400);
+    setTimeout(startCardLoader, 600);
 
     document.getElementById('startBtn').addEventListener('click', () => {
         playClickSound();
@@ -100,7 +100,7 @@
         setTimeout(() => {
             startTimestamp = performance.now();
             isIntroFinished = true;
-        }, 800);
+        }, 1000);
     });
 
     let isLetterOpen = false;
