@@ -31,7 +31,7 @@
     const ROTATION_SPEED_Y = 0.012;
 
     const WORDS = [
-        'I love you', 'i love you', '❤', 'love', 'te amo', 'je t\'aime',
+        'I love our friendship, Maisha. —',  'Maisha you re my favorite person.', '❤', 'Love you, bestie Maisha! —', 'te amo', 'je t\'aime',
         'forever', 'always', 'you', 'me & you', 'love you', 'sweetheart'
     ];
 
